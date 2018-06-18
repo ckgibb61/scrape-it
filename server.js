@@ -19,6 +19,7 @@ mongoose.connect("mongodb://localhost/scrape-it");
 // });
 
 const article = require("./article");
+const more = require("./public/app.js")
 
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "./index.html"));

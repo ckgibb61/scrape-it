@@ -1,7 +1,9 @@
 // AJAX
+
+
 $(document).ready(function () {
 
-console.log("im ready");
+    console.log("im ready");
 
             $.getJSON("/articles", function (data) {
                 displayResults(data);
@@ -15,7 +17,15 @@ console.log("im ready");
             displayResults(data);
         });
         // window.location.reload(true)
-    })
+    });
+
+
+    // $("#submit").click(() => {
+    //     console.log("hit it and submit it")
+    //     $("#articlename").val("")
+    //     $("#comment").val("")
+
+    // })
 
 
 })
